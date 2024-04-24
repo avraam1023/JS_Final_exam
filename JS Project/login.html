@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/store.css" />
+    <link rel="stylesheet" href="styles/switch_btn.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+
+    <title>TechWave</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">TechWave</a>
+
+      <nav class="navbar">
+        <a href="store.html">Store</a>
+        <a href="">About</a>
+        <a href="index.html">Contact</a>
+        <a href="#">Login</a>
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <a href="orders.html">
+          <span
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><sup class="cart-quant">0</sup></span
+          >
+        </a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="login-container">
+        <h1>Registration</h1>
+        <form>
+          <div>
+            <input type="email" placeholder="example@gmail.com" />
+          </div>
+          <div>
+            <input type="password" placeholder="password" id="password" />
+          </div>
+          <div class="sheckbox">
+            <input
+              type="checkbox"
+              onclick="showPassword()"
+              id="show-password"
+            />
+            <label for="show-password">Show Password</label>
+          </div>
+          <div class="check"></div>
+        </form>
+
+        <div class="show-messages"></div>
+
+        <button class="btn">Submit</button>
+      </div>
+    </main>
+
+    <script src="script/switch_color.js"></script>
+    <script
+      src="https://kit.fontawesome.com/af74626520.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

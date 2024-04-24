@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/store.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/switch_btn.css" />
+    <script defer type="module" src="script/store.js"></script>
+    <script defer type="module" src="script/orders.js"></script>
+
+    <title>TechWave</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">TechWave</a>
+
+      <nav class="navbar">
+        <a href="#">Store</a>
+        <a href="">About</a>
+        <a href="index.html">Contact</a>
+        <a href="login.html">Login</a>
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <a href="orders.html">
+          <span
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><sup class="cart-quant">0</sup></span
+          >
+        </a>
+      </nav>
+    </header>
+
+    <div class="store-top-img"></div>
+
+    <main>
+      <div class="searching-container">
+        <select name="quantity" id="">
+          <option value="10">10</option>
+          <option value="15" selected>15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+        </select>
+        <input type="text" type="search" class="search-input" />
+        <button class="btn-search">Search</button>
+      </div>
+
+      <div class="error">
+        <h2>Nothing Was Found</h2>
+        <h3>Please Try Again</h3>
+      </div>
+
+      <div class="main-container">
+        <div class="filter">
+          <div class="checkbox-container">
+            <h3>Brands</h3>
+            <label
+              ><input type="checkbox" name="brand" value="asus" /> Asus</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="samsung" />
+              Samsung</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="xiaomi" />
+              Xiaomi</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="apple" /> Apple</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="honor" /> Honor</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="oneplus" />
+              OnePlus</label
+            ><br />
+            <label
+              ><input type="checkbox" name="brand" value="lenovo" />
+              Lenovo</label
+            ><br />
+          </div>
+        </div>
+        <div class="card-container"></div>
+      </div>
+    </main>
+
+    <script src="script/switch_color.js"></script>
+    <script
+      src="https://kit.fontawesome.com/af74626520.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
